@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Kigyou.create!(:user_id => 1)
+Kigyou.create!(:user_id => 1)
+Kigyou.create!(:user_id => 2)
+Kigyou.create!(:user_id => 2)
+Kigyou.create!(:user_id => 3)
+
+User.create!()
+User.create!()
+User.create!()
