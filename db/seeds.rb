@@ -6,13 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+Kigyou.delete_all
 Kigyou.create!(:user_id => 1)
 Kigyou.create!(:user_id => 1)
 Kigyou.create!(:user_id => 2)
 Kigyou.create!(:user_id => 2)
 Kigyou.create!(:user_id => 3)
 
-User.create!()
-User.create!()
-User.create!()
+User.delete_all
+User.create!(:name => :taro)
+User.create!(:name => :jiro)
+User.create!(:name => :okatomo)
+
+

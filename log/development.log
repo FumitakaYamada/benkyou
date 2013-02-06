@@ -85,3 +85,83 @@ Connecting to database specified by database.yml
   [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2013-02-06 10:11:45', '2013-02-06 10:11:45')
   [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130206095357)
+Migrating to CreateKigyous (20130206095407)
+Migrating to AddUserIdToKigyou (20130206100254)
+Migrating to AddNameToUser (20130206101213)
+  [1m[35m (36.7ms)[0m  ALTER TABLE `users` ADD `name` varchar(255)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130206101213')[0m
+  [1m[35m (1.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (3.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:14:31', '2013-02-06 10:14:31', 1)[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:14:31', '2013-02-06 10:14:31', 1)
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:14:31', '2013-02-06 10:14:31', 2)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:14:31', '2013-02-06 10:14:31', 2)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:14:31', '2013-02-06 10:14:31', 3)[0m
+  [1m[35m (21.8ms)[0m  COMMIT
+Connecting to database specified by database.yml
+  [1m[36m (1.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:15:21', '2013-02-06 10:15:21', 1)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:15:21', '2013-02-06 10:15:21', 1)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:15:21', '2013-02-06 10:15:21', 2)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:15:21', '2013-02-06 10:15:21', 2)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:15:21', '2013-02-06 10:15:21', 3)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:15:21', 'taro', '2013-02-06 10:15:21')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:15:21', 'jiro', '2013-02-06 10:15:21')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:15:21', 'okatomo', '2013-02-06 10:15:21')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM `kigyous`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:16:04', '2013-02-06 10:16:04', 1)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:16:04', '2013-02-06 10:16:04', 1)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:16:04', '2013-02-06 10:16:04', 2)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:16:04', '2013-02-06 10:16:04', 2)[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `kigyous` (`created_at`, `updated_at`, `user_id`) VALUES ('2013-02-06 10:16:04', '2013-02-06 10:16:04', 3)
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM `users`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:16:04', 'taro', '2013-02-06 10:16:04')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:16:04', 'jiro', '2013-02-06 10:16:04')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `name`, `updated_at`) VALUES ('2013-02-06 10:16:04', 'okatomo', '2013-02-06 10:16:04')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
